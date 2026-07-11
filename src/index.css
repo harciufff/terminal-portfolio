@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* ─── JetBrains Mono Nerd Font (patched) ─── */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMonoNerdFontMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMonoNerdFontMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMonoNerdFontMono-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMonoNerdFontMono-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Sfondo con un gradiente scuro astratto per esaltare l'effetto sfocatura del terminale */
+body {
+  margin: 0;
+  background-color: #0a0a0c;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(40, 40, 45, 0.3) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(20, 20, 25, 0.5) 0px, transparent 50%);
+  min-height: 100vh;
+  color: #e4e4e7;
+  font-family: 'JetBrains Mono', monospace;
+}
